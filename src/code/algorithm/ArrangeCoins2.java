@@ -71,14 +71,14 @@ public class ArrangeCoins2 {
 	        int j = 0;
 	        int k = 0;
 	        int[] res = new int[Math.min(nums1.length, nums2.length)];
-	        int before = -1;
+	        int aa = -1;
 	        while (i < nums1.length && j < nums2.length) {
 	        	 if (nums1[i] == nums2[j]) {
-					if (before == nums2[j]) {
+					if (aa == nums2[j]) {
 						i++;
 						j++;
 					} else {
-						before = nums2[j];
+						aa = nums2[j];
 						res[k] = nums1[i];
 						k++;
 						i++;
