@@ -587,4 +587,21 @@ public class ArrangeCoins2 {
 
 		return sb.reverse().toString();
 	}
+	
+	
+	public static int firstUniqChar2(String s) {
+        int len = s.length();
+        Set<String> set = new HashSet<String>();
+        for(int i=0;i<len;i++){
+        	String temp = s.substring(i+1,len);
+        	if(null == temp || "".equals(temp)) return i;
+        	if(temp.contains(s.charAt(i)+"")){
+        		set.add(s.charAt(i)+"");
+        		continue;
+        	}else if(!set.contains(s.charAt(i)+"")){
+        		return i;
+        	}
+        }
+        return -1;
+    }
 }
