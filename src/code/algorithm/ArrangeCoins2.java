@@ -53,6 +53,9 @@ public class ArrangeCoins2 {
 	
 	  public char findTheDifference(String s, String t) {
 	       // char tmp = 0;
+		    System.out.println(firstUniqChar("b"));
+			System.out.println(firstUniqChar("b"));
+			System.out.println(firstUniqChar("b"));
 		    char tmp = 0x00;
 	        for(int i=0;i<s.length();i++)
 	            tmp =(char)( tmp ^ s.charAt(i));
