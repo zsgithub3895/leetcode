@@ -42,6 +42,13 @@ public class ArrangeCoins2 {
 		int[] a = {1};
 		int[] b = {1};
 		System.out.println(firstUniqChar("a"));
+		
+		System.out.println(firstUniqChar("b"));
+		
+		
+		System.out.println(firstUniqChar("b"));
+		System.out.println(firstUniqChar("b"));
+		System.out.println(firstUniqChar("b"));
 	}
 	
 	  public char findTheDifference(String s, String t) {
